@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+
+    body {
+        background-color: darkgray;
+    }
+
+    .card {
+        width: 300px;
+        height: 350px;
+        margin: 10px auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        /* justify-self:center; */
+        /* border: 1px solid black; */
+        border-radius: 5px;
+        box-shadow: 3px 3px gray;
+    }
+    
+    .card__header{
+        height: 60px;
+        display:flex;
+    }
+
+    .card__header--img {
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        border-image: fill;
+        margin: 10px;
+        margin-left:15px;
+        object-fit:cover;
+    }
+
+    .card__header--text {
+        margin-top: 10px;
+        margin-left: 20px;
+        font-family:sans-serif;
+    }
+
+    .card__header--text p {
+        font-size: 0.8em;
+        color: grey;
+        margin-top: 5px;
+    }
+
+    .card__figure {
+        width: auto;
+        height: 200px;
+        
+    }
+
+    .card__figure img {
+        
+        width: 300px;
+        height: inherit;
+        object-fit: cover;
+        align-items: center;
+    }
+
+    .card__article {
+        height: 100px;
+        margin: 10px;
+        font-size: 0.8em;
+        font-family: sans-serif;
+        color: grey;
+
+    }
+
+    .card__footer {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .card__footer--nav {
+        list-style: none;
+        display: flex;
+        margin-left: 15px;
+    }
+
+    .card__footer--nav li {
+        margin: 10px 0;
+    }
+
+    .card__footer--nav li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 520;
+        color: cadetblue;
+        font-size: 0.8em;
+        margin: 5px;
+    }
+
+    .card__footer--icons {
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .card__footer--icons img {
+        height: 20px;
+        width: 20px;
+        margin: 0 10px;
+    }
+
+</style>
+<body>
+    <div class="card">
+        <header class="card__header">
+            <img class="card__header--img" src="imagecc3.png" alt="card logo">
+            <div class="card__header--text">
+                <h4>Title goes here</h4>
+                <p>Secondary text</p>
+            </div>
+        </header>
+        <figure class="card__figure">
+            <img src="imagencentro.JPG" alt="">
+        </figure>
+        <article class="card__article">
+            <p>The quick brown fox jumps over the lazy dog. Solucion al reto de CSS </p>
+        </article>
+        <footer class="card__footer">
+            <ul class="card__footer--nav">
+                <li><a href="#">ACTION 1</a></li>
+                <li><a href="#">ACTION 2</a></li>
+            </ul>
+            <div class="card__footer--icons">
+                <img src="icons8-broken-heart-24.png" alt="corazon">
+                <img src="icons8-share-2.png" alt="compartir">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
